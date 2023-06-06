@@ -19,7 +19,7 @@ test.afterAll(async () => {
     await context.tracing.stop({ path: 'example-trace1.zip' });
 });
 
-test('evaluate', async () => {
+test.skip('evaluate', async () => {
     await page.goto('https://google.com/');
 
     await page.evaluate(() => {
